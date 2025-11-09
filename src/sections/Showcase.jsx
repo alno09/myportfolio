@@ -16,7 +16,7 @@ const Showcase = () => {
       id: 1,
       title: "POS App",
       description: "Smart Point-of-Sale app for real-time transaction management.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      image: "https://st3.depositphotos.com/10325516/15834/i/450/depositphotos_158349312-stock-photo-point-of-sale-system-for.jpg",
       tags: ["Jetpack Compose", "REST API", "Kotlin"],
       category: "Apps",
       liveUrl: "#",
@@ -26,7 +26,7 @@ const Showcase = () => {
       id: 2,
       title: "Self-order Kiosk",
       description: "Interactive kiosk interface with Bluetooth printer support.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1559137781-875af01c14bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2lvc2t8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
       tags: ["Kotlin", "Bluetooth", "Thermal Printer"],
       category: "Apps",
       liveUrl: "#",
@@ -36,19 +36,9 @@ const Showcase = () => {
       id: 3,
       title: "Smart Dispenser",
       description: "Smart IoT dispenser with QR-based order validation.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
+      image: "https://media.licdn.com/dms/image/v2/D4D12AQGqgiYkac4sWA/article-cover_image-shrink_720_1280/B4DZde6NqrHkAI-/0/1749644017853?e=2147483647&v=beta&t=0FGpx_4WBRox3ucnGLpPD6C-DIZiTFbKHVJUx1sEZaU",
       tags: ["ESP32", "C++", "QR Validation"],
       category: "IoT",
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      id: 4,
-      title: "Core Services App",
-      description: "Central backend connecting all apps and IoT devices in the ecosystem.",
-      image: "https://images.unsplash.com/photo-1461773518188-b3e86f98242f?w=800&h=600&fit=crop",
-      tags: [".NET", "PostgreSQL", "Docker", "REST API", "Microservices"],
-      category: "Website",
       liveUrl: "#",
       githubUrl: "#"
     }
@@ -61,7 +51,7 @@ const Showcase = () => {
     : projects.filter(p => p.category === activeCategory);
 
   return (
-    <section className="w-full min-h-screen bg-[#0a0e1a] py-20 px-5 md:px-20 relative overflow-hidden">
+    <section id='showcase' className="w-full min-h-screen bg-[#0a0e1a] py-20 px-5 md:px-20 relative overflow-hidden">
       {/* Animated Background Stars */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(50)].map((_, i) => (

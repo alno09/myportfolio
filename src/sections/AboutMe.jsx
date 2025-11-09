@@ -13,7 +13,7 @@ const AboutMe = () => {
     { icon: '🧩', label: 'System Architecture' },
     { icon: '⚙️', label: 'Microservices & APIs' },
     { icon: '📱', label: 'Mobile Development' },
-    { icon: '💎', label: 'Clean Code' }
+    { icon: '🔌', label: 'IoT System Integration' }
   ];
 
   const handleChange = (e) => {
@@ -28,7 +28,7 @@ const AboutMe = () => {
   };
 
   return (
-    <section className="w-full min-h-screen bg-[#0a0e1a] relative overflow-hidden py-20 px-5 md:px-20">
+    <section id='aboutme' className="w-full min-h-screen bg-[#0a0e1a] relative overflow-hidden py-20 px-5 md:px-20">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Geometric lines with our palette */}
