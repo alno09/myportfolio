@@ -202,16 +202,16 @@ const Showcase = () => {
                       {project.description}
                     </p>
 
-                    {/* Action Buttons - Always at bottom
+                    {/* Action Buttons - Always at bottom */}
                     <div className="flex gap-3 pt-4 border-t border-[#2d3548] mt-auto">
-                      <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-white rounded-lg hover:shadow-lg hover:shadow-blue-100/30 transition-all duration-300 text-sm font-medium">
+                      <button onClick={() => window.open(project.liveUrl, '_blank')} className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-white rounded-lg hover:shadow-lg hover:shadow-blue-100/30 transition-all duration-300 text-sm font-medium">
                         <ExternalLink className="w-4 h-4" />
                         Live Demo
                       </button>
-                      <button className="p-2 border border-[#2d3548] rounded-lg hover:border-purple-100 hover:bg-[#2d3548] transition-all duration-300">
+                      <button onClick={() => window.open(project.githubUrl, '_blank')} className="p-2 border border-[#2d3548] rounded-lg hover:border-purple-100 hover:bg-[#2d3548] transition-all duration-300">
                         <Github className="w-5 h-5 text-gray-50" />
                       </button>
-                    </div> */}
+                    </div>
                   </div>
 
                   {/* Card Glow Effect */}
