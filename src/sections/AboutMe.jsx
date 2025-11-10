@@ -28,7 +28,7 @@ const AboutMe = () => {
   };
 
   return (
-    <section id='aboutme' className="w-full min-h-screen bg-[#0a0e1a] relative overflow-hidden py-20 px-5 md:px-20">
+    <section className="w-full min-h-screen bg-[#0a0e1a] relative overflow-hidden py-20 px-5 md:px-20">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Geometric lines with our palette */}
@@ -187,7 +187,7 @@ const AboutMe = () => {
               <div className="absolute bottom-32 left-10 text-3xl text-blue-100 opacity-20">●</div>
               
               {/* Skills Badges */}
-              <div className="flex flex-wrap gap-3 mb-8">
+              <div id='aboutme' className="flex flex-wrap gap-3 mb-8">
                 {skills.map((skill, index) => (
                   <div
                     key={index}

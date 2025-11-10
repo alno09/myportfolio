@@ -10,7 +10,7 @@ const Skills = () => {
       category: 'Backend',
       icon: '🔷',
       color: 'from-blue-100 to-blue-200',
-      level: 90
+      level: 75
     },
     {
       name: 'Kotlin',
@@ -24,35 +24,35 @@ const Skills = () => {
       category: 'Mobile',
       icon: '🎨',
       color: 'from-purple-100 to-blue-100',
-      level: 80
+      level: 88
     },
     {
       name: 'React',
       category: 'Frontend',
       icon: '⚛️',
       color: 'from-blue-100 to-purple-100',
-      level: 95
+      level: 90
     },
     {
       name: 'TailwindCSS',
       category: 'Frontend',
       icon: '🎨',
       color: 'from-blue-100 to-blue-200',
-      level: 90
+      level: 85
     },
     {
       name: 'Three.js',
       category: 'Frontend',
       icon: '🎮',
       color: 'from-orange-100 to-orange-200',
-      level: 75
+      level: 70
     },
     {
       name: 'ESP32',
       category: 'IoT',
       icon: '📡',
       color: 'from-orange-100 to-purple-100',
-      level: 85
+      level: 90
     },
     {
       name: 'Arduino IDE',
@@ -66,49 +66,63 @@ const Skills = () => {
       category: 'Backend',
       icon: '🐍',
       color: 'from-blue-100 to-orange-100',
-      level: 88
+      level: 87
     },
     {
       name: 'PostgreSQL',
       category: 'Database',
       icon: '🐘',
       color: 'from-blue-100 to-blue-200',
-      level: 85
+      level: 80
     },
     {
       name: 'MySQL',
       category: 'Database',
       icon: '🗄️',
       color: 'from-orange-100 to-blue-100',
-      level: 90
+      level: 83
     },
     {
-      name: 'ClickUp',
+      name: 'Git',
       category: 'Tools',
-      icon: '✅',
-      color: 'from-purple-100 to-orange-100',
-      level: 80
+      icon: '🔺',
+      color: 'from-orange-200 via-red-200 to-red-300',
+      level: 85
+    },
+    {
+      name: 'ClickHouse',
+      category: 'Database',
+      icon: '📊',
+      color: 'from-yellow-100 to-yellow-300',
+      level: 65
     },
     {
       name: 'RabbitMQ',
       category: 'Backend',
       icon: '🐰',
       color: 'from-orange-100 to-orange-200',
-      level: 75
+      level: 70
     },
     {
       name: 'Kafka',
       category: 'Backend',
       icon: '📨',
       color: 'from-blue-100 to-purple-100',
-      level: 70
+      level: 60
+    },
+    {
+      name: 'Airflow',
+      category: 'Tools',
+      icon: '🌀',
+      color: 'from-sky-200 via-teal-200 to-blue-300',
+      level: 68
     },
     {
       name: 'Laravel',
       category: 'Backend',
       icon: '🔺',
       color: 'from-orange-100 to-orange-200',
-      level: 85
+      level: 78
     },
     {
       name: 'Node.js',
@@ -118,6 +132,7 @@ const Skills = () => {
       level: 88
     }
   ];
+
 
   const categories = [
     { name: 'All', icon: Code, count: skillsData.length },

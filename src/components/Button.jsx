@@ -1,21 +1,14 @@
 import React from 'react'
 
-const Button = ({ text, className, id }) => {
+const Button = ({ text, className }) => {
   return (
     <a
       onClick={(e) => {
         e.preventDefault();
-
-        const target = document.getElementById("counter");
-
-        if (target && id) {
-          const offset = window.innerHeight * 0.15;
-
-          const top =
-            target.getBoundingClientRect().top + window.pageYOffset - offset;
-
-          window.scrollTo({ top, behavior: "smooth" });
-        }
+        const link = document.createElement('a');
+                            link.href = '/cv/Alno_Sabetha_CV.pdf';
+                            link.download = 'Alno_Sabetha_CV.pdf';
+                            link.click();
       }}
       className={`${className ?? ""} cta-wrapper`}
     >

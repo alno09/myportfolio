@@ -19,8 +19,8 @@ const Showcase = () => {
       image: "https://st3.depositphotos.com/10325516/15834/i/450/depositphotos_158349312-stock-photo-point-of-sale-system-for.jpg",
       tags: ["Jetpack Compose", "REST API", "Kotlin"],
       category: "Apps",
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://oyabuncoffee.vercel.app/",
+      githubUrl: "https://github.com/alno09"
     },
     {
       id: 2,
@@ -29,8 +29,8 @@ const Showcase = () => {
       image: "https://images.unsplash.com/photo-1559137781-875af01c14bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2lvc2t8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
       tags: ["Kotlin", "Bluetooth", "Thermal Printer"],
       category: "Apps",
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://oyabuncoffee.vercel.app/",
+      githubUrl: "https://github.com/alno09"
     },
     {
       id: 3,
@@ -39,8 +39,8 @@ const Showcase = () => {
       image: "https://media.licdn.com/dms/image/v2/D4D12AQGqgiYkac4sWA/article-cover_image-shrink_720_1280/B4DZde6NqrHkAI-/0/1749644017853?e=2147483647&v=beta&t=0FGpx_4WBRox3ucnGLpPD6C-DIZiTFbKHVJUx1sEZaU",
       tags: ["ESP32", "C++", "QR Validation"],
       category: "IoT",
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://oyabuncoffee.vercel.app/",
+      githubUrl: "https://github.com/alno09"
     }
   ];
 
@@ -149,15 +149,17 @@ const Showcase = () => {
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-100/90 to-purple-100/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
                       <a
                         href={project.liveUrl}
+                        target='_blank'
+                        rel='noopener noreferrer'
                         className="p-4 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-all duration-300 transform hover:scale-110"
-                        onClick={(e) => e.preventDefault()}
                       >
                         <ExternalLink className="w-6 h-6 text-white" />
                       </a>
                       <a
                         href={project.githubUrl}
+                        target='_blank'
+                        rel='noopener noreferrer'
                         className="p-4 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-all duration-300 transform hover:scale-110"
-                        onClick={(e) => e.preventDefault()}
                       >
                         <Github className="w-6 h-6 text-white" />
                       </a>
@@ -200,7 +202,7 @@ const Showcase = () => {
                       {project.description}
                     </p>
 
-                    {/* Action Buttons - Always at bottom */}
+                    {/* Action Buttons - Always at bottom
                     <div className="flex gap-3 pt-4 border-t border-[#2d3548] mt-auto">
                       <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-white rounded-lg hover:shadow-lg hover:shadow-blue-100/30 transition-all duration-300 text-sm font-medium">
                         <ExternalLink className="w-4 h-4" />
@@ -209,7 +211,7 @@ const Showcase = () => {
                       <button className="p-2 border border-[#2d3548] rounded-lg hover:border-purple-100 hover:bg-[#2d3548] transition-all duration-300">
                         <Github className="w-5 h-5 text-gray-50" />
                       </button>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Card Glow Effect */}
@@ -237,9 +239,10 @@ const Showcase = () => {
         {/* CTA Button */}
         <div className="flex justify-center mt-16">
           <a
-            href="#"
+            href="https://github.com/alno09"
+            target='_blank'
+            rel='noopener noreferrer'
             className="group relative px-8 py-4 bg-gradient-to-r from-purple-100 to-blue-100 text-white font-semibold rounded-full overflow-hidden hover:shadow-2xl hover:shadow-purple-100/50 transition-all duration-500 hover:scale-105"
-            onClick={(e) => e.preventDefault()}
           >
             <span className="relative z-10 flex items-center gap-3">
               Check My Github

@@ -39,8 +39,9 @@ const Footer = () => {
 
   const footerLinks = [
     { label: 'Home', href: '#hero' },
+    { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#showcase' },
-    { label: 'About', href: '#aboutme' }
+    { label: 'Contact', href: '#aboutme' }
   ];
 
   const scrollToSection = (sectionId) => {
