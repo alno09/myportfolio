@@ -19,7 +19,7 @@ const Showcase = () => {
       image: "https://st3.depositphotos.com/10325516/15834/i/450/depositphotos_158349312-stock-photo-point-of-sale-system-for.jpg",
       tags: ["Jetpack Compose", "REST API", "Kotlin"],
       category: "Apps",
-      liveUrl: "https://oyabuncoffee.vercel.app/",
+      liveUrl: "https://oyabun-showcase.vercel.app/",
       githubUrl: "https://github.com/alno09"
     },
     {
@@ -29,7 +29,7 @@ const Showcase = () => {
       image: "https://images.unsplash.com/photo-1559137781-875af01c14bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2lvc2t8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
       tags: ["Kotlin", "Bluetooth", "Thermal Printer"],
       category: "Apps",
-      liveUrl: "https://oyabuncoffee.vercel.app/",
+      liveUrl: "https://oyabun-showcase.vercel.app/",
       githubUrl: "https://github.com/alno09"
     },
     {
@@ -39,7 +39,7 @@ const Showcase = () => {
       image: "https://media.licdn.com/dms/image/v2/D4D12AQGqgiYkac4sWA/article-cover_image-shrink_720_1280/B4DZde6NqrHkAI-/0/1749644017853?e=2147483647&v=beta&t=0FGpx_4WBRox3ucnGLpPD6C-DIZiTFbKHVJUx1sEZaU",
       tags: ["ESP32", "C++", "QR Validation"],
       category: "IoT",
-      liveUrl: "https://oyabuncoffee.vercel.app/",
+      liveUrl: "https://oyabun-showcase.vercel.app/",
       githubUrl: "https://github.com/alno09"
     }
   ];
