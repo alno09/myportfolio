@@ -8,31 +8,31 @@ const Footer = () => {
     { 
       icon: Github, 
       label: 'GitHub',
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/alno09',
       color: 'hover:bg-blue-100/10 hover:border-blue-100'
     },
     { 
       icon: Linkedin, 
       label: 'LinkedIn',
-      url: 'https://linkedin.com/in/yourusername',
+      url: 'https://www.linkedin.com/in/alno-sabetha/',
       color: 'hover:bg-blue-100/10 hover:border-blue-100'
     },
     { 
       icon: Twitter, 
       label: 'Twitter',
-      url: 'https://twitter.com/yourusername',
+      url: '#',
       color: 'hover:bg-purple-100/10 hover:border-purple-100'
     },
     { 
       icon: Instagram, 
       label: 'Instagram',
-      url: 'https://instagram.com/yourusername',
+      url: 'https://www.instagram.com/alno.sabetha/',
       color: 'hover:bg-orange-100/10 hover:border-orange-100'
     },
     { 
       icon: Mail, 
       label: 'Email',
-      url: 'mailto:your@email.com',
+      url: 'mailto:alnosabetha09@email.com',
       color: 'hover:bg-orange-100/10 hover:border-orange-100'
     }
   ];
