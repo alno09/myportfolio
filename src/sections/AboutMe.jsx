@@ -96,7 +96,7 @@ const AboutMe = () => {
                   {/* Profile Photo - Popping Out */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <img
-                      src="https://i.imgur.com/iR8oJZz.jpeg"
+                      src="/images/profile.jpg"
                       alt="Profile"
                       className="w-[110%] h-[110%] object-cover rounded-full shadow-2xl shadow-blue-100/30 relative z-10"
                       style={{
