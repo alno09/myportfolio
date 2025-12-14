@@ -24,7 +24,20 @@ const AboutMe = () => {
   };
 
   const handleSubmit = () => {
-    console.log('Form submitted:', formData);
+    const { name, surname, phone, email } = formData;
+
+    const message = `
+  Hi, I'm ${name} ${surname}.
+  Phone: ${phone}
+  Email: ${email}
+
+  I want to get in touch with you.
+    `;
+
+    const whatsappNumber = '6287734575623';
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, '_blank');
   };
 
   return (
