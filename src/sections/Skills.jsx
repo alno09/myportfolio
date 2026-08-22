@@ -1,135 +1,117 @@
 import React, { useState } from 'react';
-import { Code, Smartphone, Cpu, Database, Wrench, Cloud } from 'lucide-react';
+import { Code, Smartphone, Cpu, Database, Wrench } from 'lucide-react';
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState('All');
 
   const skillsData = [
     {
-      name: '.NET',
-      category: 'Backend',
-      icon: '🔷',
-      color: 'from-blue-100 to-blue-200',
-      level: 75
-    },
-    {
-      name: 'Kotlin',
-      category: 'Mobile',
-      icon: '📱',
-      color: 'from-purple-100 to-purple-200',
-      level: 85
-    },
-    {
-      name: 'Jetpack Compose',
-      category: 'Mobile',
-      icon: '🎨',
-      color: 'from-purple-100 to-blue-100',
-      level: 88
-    },
-    {
       name: 'React',
       category: 'Frontend',
       icon: '⚛️',
-      color: 'from-blue-100 to-purple-100',
-      level: 90
-    },
-    {
-      name: 'TailwindCSS',
-      category: 'Frontend',
-      icon: '🎨',
-      color: 'from-blue-100 to-blue-200',
-      level: 85
-    },
-    {
-      name: 'Three.js',
-      category: 'Frontend',
-      icon: '🎮',
-      color: 'from-orange-100 to-orange-200',
-      level: 70
-    },
-    {
-      name: 'ESP32',
-      category: 'IoT',
-      icon: '📡',
-      color: 'from-orange-100 to-purple-100',
-      level: 90
-    },
-    {
-      name: 'Arduino IDE',
-      category: 'IoT',
-      icon: '🔌',
-      color: 'from-blue-100 to-orange-100',
-      level: 80
-    },
-    {
-      name: 'Python',
-      category: 'Backend',
-      icon: '🐍',
-      color: 'from-blue-100 to-orange-100',
-      level: 87
-    },
-    {
-      name: 'PostgreSQL',
-      category: 'Database',
-      icon: '🐘',
-      color: 'from-blue-100 to-blue-200',
-      level: 80
-    },
-    {
-      name: 'MySQL',
-      category: 'Database',
-      icon: '🗄️',
-      color: 'from-orange-100 to-blue-100',
-      level: 83
-    },
-    {
-      name: 'Git',
-      category: 'Tools',
-      icon: '🔺',
-      color: 'from-orange-200 via-red-200 to-red-300',
-      level: 85
-    },
-    {
-      name: 'ClickHouse',
-      category: 'Database',
-      icon: '📊',
-      color: 'from-yellow-100 to-yellow-300',
-      level: 65
-    },
-    {
-      name: 'RabbitMQ',
-      category: 'Backend',
-      icon: '🐰',
-      color: 'from-orange-100 to-orange-200',
-      level: 70
-    },
-    {
-      name: 'Kafka',
-      category: 'Backend',
-      icon: '📨',
-      color: 'from-blue-100 to-purple-100',
-      level: 60
-    },
-    {
-      name: 'Airflow',
-      category: 'Tools',
-      icon: '🌀',
-      color: 'from-sky-200 via-teal-200 to-blue-300',
-      level: 68
-    },
-    {
-      name: 'Laravel',
-      category: 'Backend',
-      icon: '🔺',
-      color: 'from-orange-100 to-orange-200',
-      level: 78
+      color: 'from-blue-100 to-purple-100'
     },
     {
       name: 'Node.js',
       category: 'Backend',
       icon: '🟢',
-      color: 'from-blue-100 to-orange-100',
-      level: 88
+      color: 'from-blue-100 to-orange-100'
+    },
+    {
+      name: '.NET',
+      category: 'Backend',
+      icon: '🔷',
+      color: 'from-blue-100 to-blue-200'
+    },
+    {
+      name: 'Laravel',
+      category: 'Backend',
+      icon: '🔺',
+      color: 'from-orange-100 to-orange-200'
+    },
+    {
+      name: 'Python',
+      category: 'Backend',
+      icon: '🐍',
+      color: 'from-blue-100 to-orange-100'
+    },
+    {
+      name: 'PostgreSQL',
+      category: 'Database',
+      icon: '🐘',
+      color: 'from-blue-100 to-blue-200'
+    },
+    {
+      name: 'MySQL',
+      category: 'Database',
+      icon: '🗄️',
+      color: 'from-orange-100 to-blue-100'
+    },
+    {
+      name: 'Git',
+      category: 'Tools',
+      icon: '🔺',
+      color: 'from-orange-200 via-red-200 to-red-300'
+    },
+    {
+      name: 'TailwindCSS',
+      category: 'Frontend',
+      icon: '🎨',
+      color: 'from-blue-100 to-blue-200'
+    },
+    {
+      name: 'Three.js',
+      category: 'Frontend',
+      icon: '🎮',
+      color: 'from-orange-100 to-orange-200'
+    },
+    {
+      name: 'Kafka',
+      category: 'Backend',
+      icon: '📨',
+      color: 'from-blue-100 to-purple-100'
+    },
+    {
+      name: 'RabbitMQ',
+      category: 'Backend',
+      icon: '🐰',
+      color: 'from-orange-100 to-orange-200'
+    },
+    {
+      name: 'ClickHouse',
+      category: 'Database',
+      icon: '📊',
+      color: 'from-yellow-100 to-yellow-300'
+    },
+    {
+      name: 'Airflow',
+      category: 'Tools',
+      icon: '🌀',
+      color: 'from-sky-200 via-teal-200 to-blue-300'
+    },
+    {
+      name: 'Kotlin',
+      category: 'Mobile',
+      icon: '📱',
+      color: 'from-purple-100 to-purple-200'
+    },
+    {
+      name: 'Jetpack Compose',
+      category: 'Mobile',
+      icon: '🎨',
+      color: 'from-purple-100 to-blue-100'
+    },
+    {
+      name: 'ESP32',
+      category: 'IoT',
+      icon: '📡',
+      color: 'from-orange-100 to-purple-100'
+    },
+    {
+      name: 'Arduino IDE',
+      category: 'IoT',
+      icon: '🔌',
+      color: 'from-blue-100 to-orange-100'
     }
   ];
 
@@ -138,10 +120,10 @@ const Skills = () => {
     { name: 'All', icon: Code, count: skillsData.length },
     { name: 'Frontend', icon: Code, count: skillsData.filter(s => s.category === 'Frontend').length },
     { name: 'Backend', icon: Database, count: skillsData.filter(s => s.category === 'Backend').length },
-    { name: 'Mobile', icon: Smartphone, count: skillsData.filter(s => s.category === 'Mobile').length },
-    { name: 'IoT', icon: Cpu, count: skillsData.filter(s => s.category === 'IoT').length },
     { name: 'Database', icon: Database, count: skillsData.filter(s => s.category === 'Database').length },
-    { name: 'Tools', icon: Wrench, count: skillsData.filter(s => s.category === 'Tools').length }
+    { name: 'Tools', icon: Wrench, count: skillsData.filter(s => s.category === 'Tools').length },
+    { name: 'Mobile', icon: Smartphone, count: skillsData.filter(s => s.category === 'Mobile').length },
+    { name: 'IoT', icon: Cpu, count: skillsData.filter(s => s.category === 'IoT').length }
   ];
 
   const filteredSkills = activeCategory === 'All' 
@@ -178,8 +160,7 @@ const Skills = () => {
             </span>
           </h2>
           <p className="text-gray-50 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Technologies and tools I use to bring ideas to life. From frontend to backend, 
-            mobile to IoT - constantly learning and evolving.
+             collection of technologies I use to build and connect systems across software, data, AI, and hardware.
           </p>
         </div>
 
@@ -238,22 +219,6 @@ const Skills = () => {
                   {skill.name}
                 </h3>
 
-                {/* Progress Bar */}
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-gray-50">Proficiency</span>
-                    <span className="text-blue-50 font-semibold">{skill.level}%</span>
-                  </div>
-                  <div className="h-2 bg-[#2d3548] rounded-full overflow-hidden">
-                    <div 
-                      className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out group-hover:shadow-lg`}
-                      style={{
-                        width: `${skill.level}%`,
-                        transition: 'width 1s ease-out'
-                      }}
-                    ></div>
-                  </div>
-                </div>
               </div>
 
               {/* Glow Effect */}

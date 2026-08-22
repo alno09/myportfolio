@@ -10,10 +10,10 @@ const AboutMe = () => {
   });
 
   const skills = [
-    { icon: '🧩', label: 'System Architecture' },
-    { icon: '⚙️', label: 'Microservices & APIs' },
-    { icon: '📱', label: 'Mobile Development' },
-    { icon: '🔌', label: 'IoT System Integration' }
+    { icon: '🏗️', label: 'Full-Stack Development' },
+    { icon: '⚙️', label: 'Backend & API Development' },
+    { icon: '🗄️', label: 'Database & Data Systems' },
+    { icon: '🔧', label: 'System Design & Architecture' }
   ];
 
   const handleChange = (e) => {
@@ -215,13 +215,15 @@ const AboutMe = () => {
               {/* Description */}
               <div className="space-y-4 text-gray-50">
                 <p className="text-base md:text-lg leading-relaxed">
-                    I love building apps that connect digital experiences with hardware and AI.
+                  I love building software that solves real-world problems and turns ideas into working products.
                 </p>
+
                 <p className="text-base md:text-lg leading-relaxed opacity-90">
-                    My focus is on creating seamless systems that integrate software, mobile, and AI solutions.
+                  My focus is on creating reliable full-stack systems, from intuitive interfaces to scalable backend services.
                 </p>
+
                 <p className="text-base md:text-lg leading-relaxed opacity-90">
-                    Always exploring, prototyping, and learning to turn ideas into working products.
+                  Always exploring, building, and learning to turn complex problems into simple, usable solutions.
                 </p>
               </div>
             </div>

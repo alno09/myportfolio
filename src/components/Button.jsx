@@ -6,8 +6,8 @@ const Button = ({ text, className }) => {
       onClick={(e) => {
         e.preventDefault();
         const link = document.createElement('a');
-                            link.href = '/cv/Alno_Sabetha_CV.pdf';
-                            link.download = 'Alno_Sabetha_CV.pdf';
+                            link.href = '/cv/Ireneus_Alno_Sabetha_resume.pdf';
+                            link.download = 'Ireneus_Alno_Sabetha_resume.pdf';
                             link.click();
       }}
       className={`${className ?? ""} cta-wrapper`}

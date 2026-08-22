@@ -6,8 +6,8 @@ import gsap from 'gsap'
 
 const words = [
     { text: 'Software' },
-    { text: 'Hardware' },
-    { text: 'AI System' },
+    { text: 'Fullstack' },
+    { text: 'Backend' },
 ]
 
 const Hero = () => {
@@ -48,8 +48,8 @@ const Hero = () => {
                                 </span>
                             </span>
                         </h1>
-                        <h1>into Ecosystem</h1>
-                        <h1>that Help People</h1>
+                        <h1>into Products</h1>
+                        <h1>that Matter</h1>
                     </div>
                     <p className='text-white-50 md:text-xl realtive z-10 pointer-events-none'>Hi, I’m Alno, an engineer living in Indonesia,<br></br>building systems that connect code to reality.</p>
                     <Button className='md:w-80 md:h-16 w-60 h-12' id='button' text='Download CV' />

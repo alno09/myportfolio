@@ -63,6 +63,7 @@ const Navbar = () => {
           onClick={() => scrollToSection('hero')}
           className="text-xl md:text-2xl font-bold transition-all duration-300 hover:scale-105 cursor-pointer group"
         >
+          <span className="text-orange-100 group-hover:text-orange-200 transition-colors duration-300">Ireneus</span>{' '}
           <span className="text-white-50 group-hover:text-blue-50 transition-colors duration-300">Alno</span>{' '}
           <span className="text-orange-100 group-hover:text-orange-200 transition-colors duration-300">Sabetha</span>
         </button>

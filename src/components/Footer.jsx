@@ -145,7 +145,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-50">
           <p className="text-center md:text-left">
-            © {currentYear} <span className="text-blue-50 font-medium">Alno Sabetha</span>. All rights reserved.
+            © {currentYear} <span className="text-blue-50 font-medium">Ireneus Alno Sabetha</span>. All rights reserved.
           </p>
           
           <div className="flex items-center gap-6">

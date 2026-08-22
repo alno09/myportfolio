@@ -20,7 +20,8 @@ const Showcase = () => {
       tags: ["Jetpack Compose", "REST API", "Kotlin"],
       category: "Apps",
       liveUrl: "https://oyabun-showcase.vercel.app/",
-      githubUrl: "https://github.com/alno09/FnB-automation-system.git"
+      githubUrl: "https://github.com/alno09/FnB-automation-system.git",
+      view_on: "github"
     },
     {
       id: 2,
@@ -30,17 +31,30 @@ const Showcase = () => {
       tags: ["Kotlin", "Bluetooth", "Thermal Printer"],
       category: "Apps",
       liveUrl: "https://oyabun-showcase.vercel.app/",
-      githubUrl: "https://github.com/alno09/FnB-automation-system.git"
+      githubUrl: "https://github.com/alno09/FnB-automation-system.git",
+      view_on: "github"
     },
     {
       id: 3,
+      title: "Ticketing Platform",
+      description: "Ticketing WebApps that connect Event Organizer and Customer",
+      image: "https://www.cvent.com/sites/default/files/image/2023-11/Business_Travel_Trends_Bleisure_Event-Cvent_CONNECT_2023.jpg",
+      tags: ["NodeJS", "Typescript"],
+      category: "Website",
+      liveUrl: "https://tixdesk.chaomelo.online",
+      githubUrl: "#",
+      view_on: "live"
+    },
+    {
+      id: 4,
       title: "Smart Dispenser",
       description: "Smart IoT dispenser with QR-based order validation.",
       image: "https://media.licdn.com/dms/image/v2/D4D12AQGqgiYkac4sWA/article-cover_image-shrink_720_1280/B4DZde6NqrHkAI-/0/1749644017853?e=2147483647&v=beta&t=0FGpx_4WBRox3ucnGLpPD6C-DIZiTFbKHVJUx1sEZaU",
       tags: ["ESP32", "C++", "QR Validation"],
       category: "IoT",
       liveUrl: "https://oyabun-showcase.vercel.app/",
-      githubUrl: "https://github.com/alno09/FnB-automation-system.git"
+      githubUrl: "https://github.com/alno09/FnB-automation-system.git",
+      view_on: "github"
     }
   ];
 
@@ -204,13 +218,27 @@ const Showcase = () => {
 
                     {/* Action Buttons - Always at bottom */}
                     <div className="flex gap-3 pt-4 border-t border-[#2d3548] mt-auto">
-                      <button onClick={() => window.open(project.liveUrl, '_blank')} className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-white rounded-lg hover:shadow-lg hover:shadow-blue-100/30 transition-all duration-300 text-sm font-medium">
-                        <ExternalLink className="w-4 h-4" />
-                        Live Demo
-                      </button>
-                      <button onClick={() => window.open(project.githubUrl, '_blank')} className="p-2 border border-[#2d3548] rounded-lg hover:border-purple-100 hover:bg-[#2d3548] transition-all duration-300">
-                        <Github className="w-5 h-5 text-gray-50" />
-                      </button>
+                      {project.view_on === 'github' ? (
+                        <>
+                          <button onClick={() => window.open(project.githubUrl, '_blank')} className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-black text-white rounded-lg hover:shadow-lg hover:shadow-black/30 transition-all duration-300 text-sm font-medium">
+                            <Github className="w-4 h-4" />
+                            Github
+                          </button>
+                          <button onClick={() => window.open(project.liveUrl, '_blank')} className="p-2 border border-[#2d3548] rounded-lg hover:border-blue-100 hover:bg-[#2d3548] transition-all duration-300">
+                            <ExternalLink className="w-5 h-5 text-gray-50" />
+                          </button>
+                        </>
+                      ) : (
+                        <>
+                          <button onClick={() => window.open(project.liveUrl, '_blank')} className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-white rounded-lg hover:shadow-lg hover:shadow-blue-100/30 transition-all duration-300 text-sm font-medium">
+                            <ExternalLink className="w-4 h-4" />
+                            Live Demo
+                          </button>
+                          <button onClick={() => window.open(project.githubUrl, '_blank')} className="p-2 border border-[#2d3548] rounded-lg hover:border-purple-100 hover:bg-[#2d3548] transition-all duration-300">
+                            <Github className="w-5 h-5 text-gray-50" />
+                          </button>
+                        </>
+                      )}
                     </div>
                   </div>
 
