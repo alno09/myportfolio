@@ -55,6 +55,17 @@ const Showcase = () => {
       liveUrl: "https://oyabun-showcase.vercel.app/",
       githubUrl: "https://github.com/alno09/FnB-automation-system.git",
       view_on: "github"
+    },
+    {
+      id: 5,
+      title: "Finance Audit AI",
+      description: "AI-powered finance audit tool for automated compliance checking.",
+      image: "https://idmetafora.com/img/apa-itu-sistem-audit--pengertian-dan-peranannya-dalam-pengelolaan-bisnis_thumb.jpeg",
+      tags: ["Typescript", "LLM", "Retry Handling"],
+      category: "AI",
+      liveUrl: "https://audit.chaomelo.online/",
+      githubUrl: "https://github.com/alno09/finance-audit-engine.git",
+      view_on: "live"
     }
   ];
 
