@@ -13,7 +13,7 @@ const Showcase = () => {
 
   const projects = [
     {
-      id: 6,
+      id: 1,
       title: "POS App",
       description: "Smart Point-of-Sale app for real-time transaction management.",
       image: "https://st3.depositphotos.com/10325516/15834/i/450/depositphotos_158349312-stock-photo-point-of-sale-system-for.jpg",
@@ -24,7 +24,7 @@ const Showcase = () => {
       view_on: "github"
     },
     {
-      id: 5,
+      id: 2,
       title: "Self-order Kiosk",
       description: "Interactive kiosk interface with Bluetooth printer support.",
       image: "https://images.unsplash.com/photo-1559137781-875af01c14bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2lvc2t8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000",
@@ -35,7 +35,7 @@ const Showcase = () => {
       view_on: "github"
     },
     {
-      id: 4,
+      id: 3,
       title: "Ticketing Platform",
       description: "Ticketing WebApps that connect Event Organizer and Customer",
       image: "https://www.cvent.com/sites/default/files/image/2023-11/Business_Travel_Trends_Bleisure_Event-Cvent_CONNECT_2023.jpg",
@@ -46,7 +46,7 @@ const Showcase = () => {
       view_on: "live"
     },
     {
-      id: 3,
+      id: 4,
       title: "Smart Dispenser",
       description: "Smart IoT dispenser with QR-based order validation.",
       image: "https://media.licdn.com/dms/image/v2/D4D12AQGqgiYkac4sWA/article-cover_image-shrink_720_1280/B4DZde6NqrHkAI-/0/1749644017853?e=2147483647&v=beta&t=0FGpx_4WBRox3ucnGLpPD6C-DIZiTFbKHVJUx1sEZaU",
@@ -57,7 +57,7 @@ const Showcase = () => {
       view_on: "github"
     },
     {
-      id: 2,
+      id: 5,
       title: "Finance Audit AI",
       description: "AI-powered finance audit tool for automated compliance checking.",
       image: "https://idmetafora.com/img/apa-itu-sistem-audit--pengertian-dan-peranannya-dalam-pengelolaan-bisnis_thumb.jpeg",
@@ -68,11 +68,11 @@ const Showcase = () => {
       view_on: "live"
     },
     {
-      id: 1,
+      id: 6,
       title: "Multitenant Ticket Management System",
       description: "Multi-tenant customer support platform with real-time communication.",
       image: "https://www.qiscus.com/id/wp-content/uploads/sites/2/2025/11/Ticket-Management-System.webp",
-      tags: ["python", "websocket", "Real-time Communication"],
+      tags: ["python", "websocket", "Real-time"],
       category: "Website",
       liveUrl: "https://helpdesk.chaomelo.online/",
       githubUrl: "https://github.com/alno09/helpdesk-mini.git",
@@ -82,9 +82,10 @@ const Showcase = () => {
 
 
 
-  const filteredProjects = activeCategory === 'All' 
-    ? projects 
-    : projects.filter(p => p.category === activeCategory);
+  const filteredProjects = (activeCategory === 'All'
+    ? projects
+    : projects.filter(p => p.category === activeCategory)
+  ).slice().sort((a, b) => b.id - a.id);
 
   return (
     <section id='showcase' className="w-full min-h-screen bg-[#0a0e1a] py-20 px-5 md:px-20 relative overflow-hidden">
