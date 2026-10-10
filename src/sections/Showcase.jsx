@@ -36,17 +36,6 @@ const Showcase = () => {
     },
     {
       id: 3,
-      title: "Ticketing Platform",
-      description: "Ticketing WebApps that connect Event Organizer and Customer",
-      image: "https://www.cvent.com/sites/default/files/image/2023-11/Business_Travel_Trends_Bleisure_Event-Cvent_CONNECT_2023.jpg",
-      tags: ["NodeJS", "Typescript"],
-      category: "Website",
-      liveUrl: "https://tixdesk.chaomelo.online",
-      githubUrl: "#",
-      view_on: "live"
-    },
-    {
-      id: 4,
       title: "Smart Dispenser",
       description: "Smart IoT dispenser with QR-based order validation.",
       image: "https://media.licdn.com/dms/image/v2/D4D12AQGqgiYkac4sWA/article-cover_image-shrink_720_1280/B4DZde6NqrHkAI-/0/1749644017853?e=2147483647&v=beta&t=0FGpx_4WBRox3ucnGLpPD6C-DIZiTFbKHVJUx1sEZaU",
@@ -55,6 +44,17 @@ const Showcase = () => {
       liveUrl: "https://oyabun-showcase.vercel.app/",
       githubUrl: "https://github.com/alno09/FnB-automation-system.git",
       view_on: "github"
+    },
+    {
+      id: 4,
+      title: "Ticketing Platform",
+      description: "Ticketing WebApps that connect Event Organizer and Customer",
+      image: "https://www.cvent.com/sites/default/files/image/2023-11/Business_Travel_Trends_Bleisure_Event-Cvent_CONNECT_2023.jpg",
+      tags: ["NodeJS", "Typescript"],
+      category: "Website",
+      liveUrl: "https://tixdesk.chaomelo.online",
+      githubUrl: "#",
+      view_on: "live"
     },
     {
       id: 5,
